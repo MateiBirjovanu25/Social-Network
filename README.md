@@ -1,8 +1,2 @@
 # Social-Network
-<br>
-<a><img src="https://ibb.co/FJtMrgy" /></a>
-<br>
-<a><img src="https://ibb.co/Bw9NKk9"/></a>
-<br>
-<a><img src="https://ibb.co/nLLSnbX"/></a>
-<br>
+<a href="https://ibb.co/FJtMrgy"><img src="https://i.ibb.co/FJtMrgy/ss1.png" alt="ss1" border="0"></a> <a href="https://ibb.co/Bw9NKk9"><img src="https://i.ibb.co/Bw9NKk9/ss2.png" alt="ss2" border="0"></a> <a href="https://ibb.co/nLLSnbX"><img src="https://i.ibb.co/nLLSnbX/ss3.png" alt="ss3" border="0"></a>
