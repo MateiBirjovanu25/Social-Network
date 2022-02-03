@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #80BB9E;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.MessageWindowController">
+   <children>
+      <TextField fx:id="textFieldFriends" editable="false" layoutY="350.0" prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldContent" alignment="TOP_LEFT" layoutY="46.0" prefHeight="307.0" prefWidth="600.0" promptText="enter message" style="-fx-background-color: #514538; -fx-border-color: black; -fx-border-width: 1px; -fx-text-fill: #80BB9E;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <Button layoutX="536.0" layoutY="5.0" mnemonicParsing="false" onAction="#buttonSendOnAction" prefHeight="42.0" prefWidth="63.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/send.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets right="-6.0" />
+         </padding>
+      </Button>
+      <Button layoutY="5.0" mnemonicParsing="false" onAction="#buttonBackOnAction" prefHeight="42.0" prefWidth="63.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets right="7.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>

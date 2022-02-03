@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.LoginController">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="446.0" style="-fx-background-color: #514538;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#80bb9e" layoutX="116.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #80BB9E;" text="Log in">
+               <font>
+                  <Font name="Calibri Bold" size="33.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameField" layoutX="85.0" layoutY="170.0" prefHeight="26.0" prefWidth="151.0" promptText="Email" style="-fx-text-fill: #514538; -fx-background-color: #B8A99A; -fx-prompt-text-fill: #4C866B;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordField" layoutX="85.0" layoutY="214.0" prefHeight="26.0" prefWidth="150.0" promptText="Password" style="-fx-background-color: #B8A99A; -fx-text-fill: #514538; -fx-prompt-text-fill: #4C866B;" text="">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></PasswordField>
+            <Button fx:id="logInButton" layoutX="85.0" layoutY="283.0" mnemonicParsing="false" onAction="#logInButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #B8A99A;" text="Log in">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="invalidCredentialsLabel" alignment="CENTER" layoutX="24.0" layoutY="256.0" prefHeight="17.0" prefWidth="269.0" textAlignment="CENTER" textFill="#e40d0d" />
+            <Hyperlink fx:id="hyperlink" layoutX="66.0" layoutY="316.0" onAction="#signUpHyperLinkOnAction" text="Don't have an account? Sign up." textAlignment="CENTER" textFill="#80bb9e" />
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <BorderPane prefHeight="400.0" prefWidth="287.0" style="-fx-background-color: #80BB9E;" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="203.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@img/logo_log_in.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="230.0" style="-fx-border-color: black; -fx-background-color: #80BB9E; -fx-border-width: 2px; -fx-background-radius: 15px; -fx-border-radius: 15px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.event.EventPreview">
+   <children>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="18.0" prefWidth="230.0" text="Nume eveniment">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" alignment="CENTER" layoutX="6.0" layoutY="34.0" prefHeight="57.0" prefWidth="230.0" text="Descriere" />
+      <ListView fx:id="listView" layoutX="10.0" layoutY="169.0" prefHeight="58.0" prefWidth="230.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="150.0" prefHeight="26.0" prefWidth="221.0" text="Participants" />
+      <Label fx:id="organizerLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="134.0" prefHeight="18.0" prefWidth="222.0" text="Organized by: " />
+      <Label fx:id="timeLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="116.0" prefHeight="18.0" prefWidth="222.0" text="Time label" />
+      <Line endX="70.39997863769531" layoutX="148.0" layoutY="34.0" startX="-119.0000228881836" />
+   </children>
+</AnchorPane>

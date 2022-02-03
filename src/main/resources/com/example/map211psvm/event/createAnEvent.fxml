@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="294.0" style="-fx-background-color: #80BB9E; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.event.CreateEventController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="298.0" text="Create an event">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="349.0" prefWidth="294.0">
+         <children>
+            <TextField fx:id="nameLabel" alignment="TOP_LEFT" layoutX="72.0" layoutY="37.0" promptText="Name" style="-fx-background-color: #CEFBE4;" />
+            <TextField fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="72.0" layoutY="73.0" prefHeight="70.0" prefWidth="150.0" promptText="Description" style="-fx-background-color: #CEFBE4;" />
+            <DatePicker fx:id="datePicker" layoutX="72.0" layoutY="158.0" prefHeight="26.0" prefWidth="150.0" />
+            <Button fx:id="createButton" layoutX="72.0" layoutY="248.0" mnemonicParsing="false" onAction="#createButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #CEA881; -fx-background-radius: 20;" text="Create">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="cancelButton" layoutX="72.0" layoutY="289.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #CEA881; -fx-background-radius: 20;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Spinner fx:id="timeSpinner" layoutX="71.0" layoutY="205.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

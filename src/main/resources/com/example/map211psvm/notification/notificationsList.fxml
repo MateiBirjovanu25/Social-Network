@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="root" prefHeight="350.0" prefWidth="200.0" style="-fx-background-color: transparent;;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.notification.NotificationsListController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#80bb9e" height="60.0" layoutX="71.0" layoutY="278.0" rotate="45.0" stroke="#ffffff00" strokeType="INSIDE" width="60.0" />
+      <QuadCurve controlX="94.0" controlY="248.0" endX="94.0" endY="205.0" fill="#80bb9e" layoutX="4.0" layoutY="93.0" startX="15.0" startY="216.0" stroke="#ffffff00" strokeType="INSIDE" />
+      <QuadCurve controlX="94.0" controlY="248.0" endX="94.0" endY="205.0" fill="#80bb9e" layoutX="9.0" layoutY="93.0" startX="173.0" startY="216.0" stroke="#ffffff00" strokeType="INSIDE" />
+      <ListView fx:id="listView" layoutX="2.0" layoutY="50.0" prefHeight="307.0" prefWidth="196.0" style="-fx-background-radius: 25;" stylesheets="@../css/notificationList.css" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+   </children>
+</AnchorPane>

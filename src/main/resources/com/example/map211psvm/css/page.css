@@ -1,0 +1,3 @@
+.pagination {
+    -fx-skin: "org.acme.javafx.scene.control.skin.PaginationSkin";
+}

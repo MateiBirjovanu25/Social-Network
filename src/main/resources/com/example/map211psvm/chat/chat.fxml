@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="892.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.ChatController">
+   <children>
+      <VBox prefHeight="546.0" prefWidth="270.0" style="-fx-background-color: #80BB9E;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="216.0" style="-fx-background-color: #CEA881; -fx-border-color: black; -fx-border-width: 2;">
+               <children>
+                  <Button fx:id="buttonSearchAction" layoutX="-2.0" mnemonicParsing="false" onAction="#searchFriends" prefHeight="40.0" prefWidth="14.0" style="-fx-background-color: transparent;" stylesheets="@../css/buttonMain.css">
+                     <graphic>
+                        <ImageView fx:id="buttonSearch" fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/lupa2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="3.0" />
+                     </HBox.margin></Button>
+                  <TextField fx:id="friendsTextField" prefHeight="38.0" prefWidth="172.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #514538; -fx-text-fill: #80BB9E;" HBox.hgrow="SOMETIMES">
+                     <HBox.margin>
+                        <Insets left="-15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></TextField>
+                  <Button mnemonicParsing="false" onAction="#newMessageOnAction" prefHeight="37.0" prefWidth="0.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/new_message.png" />
+                           </image></ImageView>
+                     </graphic></Button>
+               </children>
+            </HBox>
+            <ListView fx:id="friendsListView" onMouseClicked="#listViewFriendsOnAction" prefHeight="497.0" prefWidth="270.0" style="-fx-background-color: #514538; -fx-control-inner-background: #514538; -fx-control-inner-background-alt: -fx-control-inner-background; -fx-selection-bar: #B8A99A; -fx-selection-bar-non-focused: #B8A99A;" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="267.0" layoutY="491.0" prefHeight="54.0" prefWidth="626.0" style="-fx-background-color: #80BB9E;">
+         <children>
+            <TextField fx:id="messageTextField" prefHeight="44.0" prefWidth="458.0" style="-fx-background-radius: 20; -fx-background-color: #CEA881; -fx-border-color: black; -fx-border-radius: 20;" HBox.hgrow="SOMETIMES">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#buttonSendOnAction" style="-fx-background-color: transparent;" stylesheets="@../css/buttonMain.css">
+               <graphic>
+                  <ImageView fx:id="buttonSend" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/send.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></HBox>
+      <HBox layoutX="267.0" layoutY="57.0" prefHeight="434.0" prefWidth="626.0" style="-fx-background-color: transparent;">
+         <children>
+            <ListView fx:id="messagesListView" prefHeight="281.0" prefWidth="674.0" style="-fx-background-color: #80BB9E; -fx-control-inner-background: #80BB9E; -fx-control-inner-background-alt: -fx-control-inner-background;" />
+         </children></HBox>
+      <HBox layoutX="267.0" layoutY="1.0" prefHeight="58.0" prefWidth="626.0" style="-fx-background-color: #CEA881; -fx-border-color: black; -fx-border-width: 2;">
+         <children>
+            <Button fx:id="buttonImage" mnemonicParsing="false" onAction="#buttonImageOnAction" prefHeight="39.0" prefWidth="36.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 1;">
+               <graphic>
+                  <ImageView fx:id="profileImage" fitHeight="48.0" fitWidth="43.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" x="3.5" y="-3.0">
+                     <image>
+                        <Image url="@../img/profile1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="textFieldFriend" prefHeight="54.0" prefWidth="513.0" style="-fx-background-color: #CEA881;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="55.0" prefWidth="74.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

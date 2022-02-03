@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="710.0" style="-fx-background-color: #CEFBE4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.event.EventController">
+   <children>
+      <Label fx:id="label" alignment="CENTER" layoutX="170.0" prefHeight="50.0" prefWidth="370.0" text="Events" AnchorPane.bottomAnchor="400.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="changeEventsButton" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeEvents" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #80BB9E;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Pane fx:id="pane" layoutY="54.0" prefHeight="390.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0" />
+      <Pane fx:id="eventPane" layoutX="305.0" prefHeight="250.0" prefWidth="250.0" visible="false" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="70.0" />
+      <Button layoutX="660.0" layoutY="400.0" mnemonicParsing="false" onAction="#createAnEvent" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/eventplus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

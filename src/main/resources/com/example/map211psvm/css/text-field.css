@@ -1,0 +1,13 @@
+.text-field {
+    -fx-text-fill: #514538;
+    -fx-background-color: #B8A99A;
+    -fx-prompt-text-fill: #4C866B;
+}
+
+.text-field:hover {
+    -fx-background-color: #cea881;
+}
+
+.text-field:focused {
+    -fx-background-color: #cea881;
+}

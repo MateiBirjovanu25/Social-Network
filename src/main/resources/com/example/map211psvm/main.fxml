@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.MainController">
+   <children>
+      <AnchorPane>
+         <children>
+            <Pane fx:id="pane" prefHeight="450.0" prefWidth="710.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane fx:id="notificationsPane" layoutX="206.0" layoutY="100.0" prefHeight="350.0" prefWidth="200.0" visible="false">
+               <children>
+                  <ListView prefHeight="300.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="710.0" style="-fx-background-color: #80BB9E;">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#homeButtonOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-border-width: 0;" stylesheets="@css/buttonMain.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logo_log_in.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="5.0" mnemonicParsing="false" onAction="#friendRequestsButtonOnAction" prefHeight="40.0" prefWidth="40.0" stylesheets="@css/buttonMain.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/add-userFilled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" layoutX="155.0" layoutY="5.0" mnemonicParsing="false" onAction="#eventsButtonOnAction" prefHeight="40.0" prefWidth="40.0" stylesheets="@css/buttonMain.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="155.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/eventFilled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" layoutX="229.0" layoutY="7.0" mnemonicParsing="false" onAction="#messagesButtonOnAction" prefHeight="40.0" prefWidth="40.0" stylesheets="@css/buttonMain.css" AnchorPane.leftAnchor="220.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/mesajFilled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ToggleButton fx:id="notificationsButton" layoutX="281.0" layoutY="6.0" mnemonicParsing="false" onAction="#notificationsButtonOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="378.2">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/notificationFilled.png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <Button alignment="CENTER" layoutX="620.0" layoutY="-7.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="40.0" prefWidth="40.0" stylesheets="@css/buttonMain.css" AnchorPane.rightAnchor="14.0">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/exitFilled.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="433.0" layoutY="15.0" prefHeight="18.0" prefWidth="90.0" text="Logged in as:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelName" layoutX="511.0" layoutY="15.0" text="Nume nume">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

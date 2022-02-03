@@ -1,0 +1,26 @@
+.friendLabelStyle {
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-background-color: #80BB9E;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-control-inner-background:  #CEA881;
+    -fx-text-fill: #CEA881;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-border-color: black;
+}
+
+.outline.friendLabelStyle .text {
+    -fx-fill: #CEA881;
+    -fx-stroke: black;
+    -fx-stroke-width: 0.3px;
+}
+
+
+
+.vbox{
+    -fx-border-color: #4C866B;
+    -fx-border-width: 0px;
+    -fx-accent: #80BB9E;
+}

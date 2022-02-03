@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #CEFBE4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.page.PageController">
+   <children>
+      <ProgressBar fx:id="loadingBar" layoutX="484.0" layoutY="13.0" prefHeight="18.0" prefWidth="208.0" progress="0.0" />
+      <Label layoutX="350.0" layoutY="11.0" text="Upcoming event in ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="13.0" layoutY="3.0" text="Loged in as">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="117.0" fitWidth="114.0" layoutX="93.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/quokkaS.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="14.0" layoutY="45.0" text="Nume Prenume">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="358.0" layoutY="85.0" prefHeight="345.0" prefWidth="328.0" />
+      <Label fx:id="listLabel" layoutX="474.0" layoutY="47.0" text="Notifications">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

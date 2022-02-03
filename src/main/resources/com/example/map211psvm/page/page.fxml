@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pageRoot" prefHeight="450.0" prefWidth="710.0" style="-fx-background-color: #CEFBE4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.page.PageController">
+   <children>
+      <Pane layoutX="122.0" layoutY="15.0" prefHeight="140.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 40;" />
+      <ImageView fx:id="image" fitHeight="117.0" fitWidth="114.0" layoutX="141.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/quokkaS.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="150.0" prefHeight="30.0" prefWidth="200.0" text="Nume Prenume">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="322.0" text="Download your &#10;activity raports">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="174.0" layoutY="362.0" mnemonicParsing="false" onAction="#reportButtonOnAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/download.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="emailLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="180.0" prefHeight="18.0" prefWidth="184.0" text="email" />
+      <Label fx:id="noOfFriendsLabel" layoutX="100.0" layoutY="226.0" prefHeight="18.0" prefWidth="137.0" text="0 friends." />
+      <Label fx:id="eventsParticipatedLabel" layoutX="99.0" layoutY="278.0" prefHeight="18.0" prefWidth="159.0" text="Participated" />
+      <Label fx:id="noOfEventsLabel" layoutX="100.0" layoutY="252.0" prefHeight="18.0" prefWidth="137.0" text="Your events:" />
+      <Line endX="150.79998779296875" layoutX="187.0" layoutY="13.0" startX="-127.89997863769531" />
+      <Line endX="100.0" layoutX="199.0" layoutY="307.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="198.0" layoutY="207.0" startX="-100.0" />
+      <Line endX="122.03117370605469" endY="288.78314208984375" layoutX="439.0" layoutY="-31.0" rotate="78.7" startX="-276.068359375" startY="208.05215454101562" />
+      <Line endX="-367.39996337890625" endY="35.5" layoutX="415.0" layoutY="-22.0" startX="-367.39996337890625" startY="442.5999755859375" AnchorPane.leftAnchor="40.0" />
+      <ListView fx:id="list" layoutX="378.0" layoutY="46.0" prefHeight="376.0" prefWidth="280.0" stylesheets="@../css/friendsList.css" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="52.0" />
+      <Label alignment="CENTER" layoutX="378.0" layoutY="14.0" prefHeight="40.0" prefWidth="280.0" text="Your friends">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="245.0" layoutY="222.0" onAction="#goToRequests" text="add more." />
+      <Hyperlink layoutX="238.0" layoutY="249.0" onAction="#goToEvents" prefHeight="23.0" prefWidth="83.0" text="make more." />
+      <Hyperlink layoutX="241.0" layoutY="276.0" onAction="#goToEvents" text="go to more." />
+      <Line endX="-367.39996337890625" endY="35.5" layoutX="1037.0" layoutY="-22.0" startX="-367.39996337890625" startY="442.5999755859375" />
+      <Line endX="142.0" layoutX="503.0" layoutY="421.0" startX="-112.0" />
+   </children>
+</AnchorPane>

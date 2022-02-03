@@ -1,0 +1,48 @@
+.styleLabel {
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-background-color: #CEA881;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-control-inner-background:  #CEA881;
+    -fx-text-fill: #514538;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-border-color: black;
+}
+
+.styleLabelReplyContent{
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-background-color: #CEA881;
+    -fx-background-radius: 20px;
+    -fx-control-inner-background:  #CEA881;
+    -fx-text-fill: #514538;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+}
+
+.styleLabelReply{
+    -fx-background-color: #B8A99A;
+    -fx-alignment: center;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #514538;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 12;
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+}
+
+.vbox{
+    -fx-fit-to-width: true;
+}
+
+.hBox{
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+}

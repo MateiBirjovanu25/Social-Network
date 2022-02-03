@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Pagination?>
+
+
+<Pagination fx:id="pagination" pageCount="12345" prefHeight="390.0" prefWidth="710.0" style="-fx-background-color: #CEFBE4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map211psvm.controller.event.EventsPageController" />
